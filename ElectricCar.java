@@ -46,7 +46,7 @@ double whPrLToKmL = (getWhPrKm() / 91.25) / 100.00;
     }
 
     public String toString() {
-        return "Registration number: " + getRegistrationNumber() + "\n Make and model: " + getMake() + " " + getModel() + "\n It has " + getNumberOfDoors() + " doors." + "\n It is an electric car, with a max range of: " + getMaxRangeKm() + " km."  + "\n On average it uses: " + getWhPrKm() + " Wh/km." + "\n The registration fee is: " + getRegistrationFee() + " kr."  + "\n";
+        return "Registration number: " + getRegistrationNumber() + "\n Make and model: " + getMake() + " " + getModel() + "\n It has " + getNumberOfDoors() + " doors." + "\n It is an electric car, with a max range of: " + getMaxRangeKm() + " km."  + "\n On average it uses: " + getWhPrKm() + " Wh/km." + "\n The registration fee is: " + getRegistrationFee() + " DKK."  + "\n";
     }
 }
 

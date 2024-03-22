@@ -30,7 +30,7 @@ public class FleetOfCars {
         for (Car c : fleet) {
             stringStarter.append(c.toString()).append("\n");
         }
-            return stringStarter.toString() + "The total sum of registration fees are: " + getTotalRegistrationFeeForFleet() + " kr.";
+            return stringStarter.toString() + "The total sum of registration fees are: " + getTotalRegistrationFeeForFleet() + " DKK.";
         }
 
 
