@@ -5,7 +5,7 @@ public class Main {
 
         //Describe the cars in the fleet
         DieselCar car1 = new DieselCar("CD20548", "Fiat", "Ducato", 5, 17, false);
-        GasolinCar car2 = new GasolinCar("DM43010", "Skoda", "Fabia", 5, 19);
+        GasolinCar car2 = new GasolinCar("DM43010", "Skoda", "Fabia", 5, 21);
         ElectricCar car3 = new ElectricCar("AA99999","Tesla", "X1", 5, 84, 400);
 
         //This car can not be added as the registration number already exists.

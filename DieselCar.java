@@ -17,13 +17,13 @@ public class DieselCar extends AFuelCar {
         int equalizationTax = 130;
         int sum = registrationFee + equalizationTax;
 
-        if (20 <= getKmPrLitre() && getKmPrLitre() > 50) {
+        if (20 <= getKmPrLitre() || getKmPrLitre() > 50) {
             sum = 330 + 130;
-        } else if (15 <= getKmPrLitre() && getKmPrLitre() > 20) {
+        } else if (15 <= getKmPrLitre() && getKmPrLitre() < 20) {
             sum = 1050 + 1390;
-        } else if (10 <= getKmPrLitre() && getKmPrLitre() > 15) {
+        } else if (10 <= getKmPrLitre() && getKmPrLitre() < 15) {
             sum = 2340 + 1850;
-        } else if (5 <= getKmPrLitre() && getKmPrLitre() > 10) {
+        } else if (5 <= getKmPrLitre() && getKmPrLitre() < 10) {
             sum = 5500 + 2770;
         } else if (5 > getKmPrLitre()) {
             sum = 10470 + 15260;

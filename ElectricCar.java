@@ -31,7 +31,7 @@ public class ElectricCar extends ACar {
     public int getRegistrationFee() {
 double whPrLToKmL = (getWhPrKm() / 91.25) / 100.00;
         registrationFee = 330;
-        if (20 <= whPrLToKmL && whPrLToKmL < 50) {
+        if (20 <= whPrLToKmL || whPrLToKmL > 50) {
             return 330;
         } else if (15 <= whPrLToKmL && whPrLToKmL < 20) {
             return 1050;

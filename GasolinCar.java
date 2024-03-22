@@ -18,13 +18,13 @@ public class GasolinCar extends AFuelCar {
     @Override
     public int getRegistrationFee() {
     registrationFee = 10470;
-        if (20 <= getKmPrLitre() && getKmPrLitre() > 50) {
+        if (20 <= getKmPrLitre() || getKmPrLitre() > 50) {
             return 330;
-        } else if (15 <= getKmPrLitre() && getKmPrLitre() > 20) {
+        } else if (15 <= getKmPrLitre() && getKmPrLitre() < 20) {
             return 1050;
-        } else if (10 <= getKmPrLitre() && getKmPrLitre() > 15) {
+        } else if (10 <= getKmPrLitre() && getKmPrLitre() < 15) {
             return 2340;
-        } else if (5 <= getKmPrLitre() && getKmPrLitre() > 10) {
+        } else if (5 <= getKmPrLitre() && getKmPrLitre() < 10) {
             return 5500;
         } else if (5 > getKmPrLitre()) {
             return 10470;
